@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+header {
+    background-color: red;
+    border-radius: 1rem;
+    border: 1px solid black;
+    width: 30vw;
+    height: 8rem;
+    margin: 0 auto;
+    position: relative;
+    top: 4rem;
+}
+
+header h1 {
+    text-align: center;
+    line-height: 8rem;
+    margin: 0;
+}
+
+section {
+    background-color: lightgrey;
+    border: 0.1rem solid black;
+    border-radius: 3.5rem;
+    width: 50vw;
+    height: 40vh;
+    margin: 0 auto;
+}
+
+section p {
+    text-align: left;
+    padding: 60px;
+    font-size: 1.6rem;
+}
