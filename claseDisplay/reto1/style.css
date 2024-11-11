@@ -33,6 +33,10 @@ header nav {
     float: right;
 }
 
+header nav ul {
+    list-style: none;
+}
+
 header nav li {
     display: inline-block;
     font-size: 2rem;
@@ -40,8 +44,76 @@ header nav li {
     line-height: 5rem;
 }
 
+header nav li a:hover {
+    color: greenyellow;
+}
+
 header nav li a {
     color: white;
     text-decoration: none;
 }
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+main aside {
+    background-color: coral;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 20rem;
+    min-width: 10rem;
+    height: 80vh;
+}
+
+main aside article {
+    background-color: cornsilk;
+    width: 90%;
+    height: 8rem;
+    border-radius: 1rem;
+}
+
+main section {
+    background-color: cadetblue;
+    padding: 2rem;
+    width: 100%;
+}
+
+footer {
+    background-color: cornflowerblue;
+    height: 3rem;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer nav li {
+    display: inline-block;
+    line-height: 3rem;
+    font-size: 1rem;
+    padding: 0 2rem;
+}
+
+footer nav li a:hover {
+    color: lightcoral;
+}
+
+footer nav li a {
+    text-decoration: none;
+    color: white;
+}
+
 
