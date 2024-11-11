@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+</head>
+<body>
+<main>
+    <section>
+        <!-- Se agrega el atributo controls para mostrar los controles del video -->
+        <!-- Se agrega el atributo preload=auto para que cargue el video en la pagina web -->
+        <!-- Se agrega el símbolo "#t" para indicar el tiempo preciso de reproduccion, ej: #t=5,10 (empieza en el segundo 5 y termina en el segundo 10 -->
+        <video controls preload="auto">
+            <!-- Se usa la etiqueta "source" dentro de la etiqueta "video" para indicar posibles formatos del video -->
+            <source src="videoPrueba.mp4#t=5,10"/>
+            <source src="videoPrueba.m4v#t=5,10"/>
+        </video>
+    </section>
+</main>
+
+</body>
+</html>
