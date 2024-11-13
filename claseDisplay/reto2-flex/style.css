@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+header {
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+}
+
+header h1 {
+    color: white;
+    margin-left: 1rem;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+header nav ul li {
+    font-size: 2rem;
+    margin: 0 1rem;
+}
+
+header nav ul li a:hover {
+    color: purple;
+}
+
+header nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+}
+
+main aside {
+    background-color: darkcyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+main aside article {
+    background-color: cadetblue;
+    width: 20rem;
+    height: 10rem;
+    border-radius: 2rem;
+    margin: 1rem;
+}
+
+main section {
+    background-color: azure;
+    padding: 1rem;
+    width: 100vw;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: silver;
+    height: 3rem;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+footer nav ul li a:hover {
+    color: mediumseagreen;
+}
+
+footer nav ul li a {
+    color: ghostwhite;
+    text-decoration: none;
+}
