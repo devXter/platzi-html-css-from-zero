@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Batatabit - La plataforma para el intercambio de criptomonedas con información en tiempo real">
+    <meta name="keywords" content="criptomonedas, bitcoin, ethereum, ripple, stellar, cambio, trading">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,17 +18,18 @@
 
 <body>
     <header>
-        <img src="./assets/imgs/logo.svg" alt="Logo de Batatabit">
+        <img src="./assets/imgs/logo.svg" alt="Logo de Batatabit - Plataforma de intercambio de criptomonedas">
 
         <div class="header--title-container">
             <h1>La próxima revolución en el intercambio de criptomonedas</h1>
             <p>Batatabit te ayuda a navegar entre los diferentes precios y tendencias</p>
-            <a class="header--button" href="">Conoce nuestros planes <span></span></a>
+            <a class="header--button" href="#plans" aria-label="Ver nuestros planes">Conoce nuestros planes
+                <span></span></a>
         </div>
     </header>
     <main>
         <section class="main-exchange-container">
-            <div class="backgroundImg"></div>
+            <div class="backgroundImg" role="img" aria-label="Imagen decorativa de Bitcoin"></div>
 
             <div class="main-exchange-container--title">
                 <h2>Visibilizamos todas las tasas de cambio.</h2>
@@ -34,7 +38,7 @@
             </div>
 
             <section class="main-tables-container">
-                <div class="main-currency-table" id="currency-table">
+                <div class="main-currency-table" id="currency-table" role="region" aria-label="Tabla de monedas">
                     <p class="currency-table--title">Monedas</p>
                     <div class="currency-table--container">
                         <table>
@@ -56,8 +60,9 @@
                             </tr>
                         </table>
 
-                        <a href="#commission-table" class="table-go-right">
-                            <img src="./assets/icons/mdi_keyboard_arrow_down.svg" alt="Icono de flecha hacia la derecha">
+                        <a href="#commission-table" class="table-go-right" aria-label="Ver tabla de comisiones">
+                            <img src="./assets/icons/mdi_keyboard_arrow_down.svg"
+                                alt="Flecha para ver tabla de comisiones">
                         </a>
 
                     </div>
@@ -67,7 +72,7 @@
                     </div>
                 </div>
 
-                <div class="main-commission-table" id="commission-table">
+                <div class="main-commission-table" id="commission-table" role="region" aria-label="Tabla de comisiones">
                     <p class="commission-table--title">Comisiones</p>
                     <div class="commission-table--container">
                         <table>
@@ -89,10 +94,11 @@
                             </tr>
                         </table>
 
-                        <a href="#currency-table" class="table-go-left">
-                            <img src="./assets/icons/mdi_keyboard_arrow_down.svg" alt="Icono de flecha hacia la izquierda">
+                        <a href="#currency-table" class="table-go-left" aria-label="Ver tabla de monedas">
+                            <img src="./assets/icons/mdi_keyboard_arrow_down.svg"
+                                alt="Flecha para ver tabla de monedas">
                         </a>
-                        
+
                     </div>
 
                     <div class="commission-table--date">
@@ -101,9 +107,75 @@
                 </div>
             </section>
         </section>
-        <section></section>
-        <section></section>
-        <section></section>
+        <section class="main-product-detail">
+            <span class="product-detail--batata-logo" role="img" aria-label="Logo de Batatabit"></span>
+            <div class="product-detail--title">
+                <h2>Creamos un producto sin comparación.</h2>
+                <p>Confiable y diseñado para su uso diario.</p>
+            </div>
+            <section class="product-cards--container">
+                <article class="product-detail--card">
+                    <span class="icon clock-icon" role="img" aria-label="Ícono de reloj"></span>
+                    <p class="product--card-title">Tiempo real</p>
+                    <p class="product--card-body">Nuestro API toma información minuto a minuto sobre las tasas que más
+                        determinan el comportamiento.</p>
+                </article>
+                <article class="product-detail--card">
+                    <span class="icon eye-icon" role="img" aria-label="Ícono de ojo"></span>
+                    <p class="product--card-title">No hay tasas escondidas</p>
+                    <p class="product--card-body">Ni en la compra o al momento de exit, Batatabit siempre te muestra el
+                        costo real de lo que estás adquiriendo.</p>
+                </article>
+                <article class="product-detail--card">
+                    <span class="icon dollar-icon" role="img" aria-label="Ícono de dólar"></span>
+                    <p class="product--card-title">Compara monedas</p>
+                    <p class="product--card-body">No más rumores, con Batatabit sabrás el valor real de cada moneda en
+                        el mercado actual.</p>
+                </article>
+                <article class="product-detail--card">
+                    <span class="icon check-icon" role="img" aria-label="Ícono de check"></span>
+                    <p class="product--card-title">Información confiable</p>
+                    <p class="product--card-body">Nuestras fuentes están 100% verificadas y continuamos auditando su
+                        contenido mientras se actualizan.</p>
+                </article>
+            </section>
+        </section>
+        <section class="bitcoin-img-container">
+            <h2>Conócelo hoy.</h2>
+        </section>
+        <section id="plans" class="main-plans-container">
+            <div class="plans--title">
+                <h2>Escoge el plan que mejor se ajuste a ti.</h2>
+                <p>Cualquier plan te da acceso completo a nuestra plataforma.</p>
+            </div>
+            <section class="plans-container--slider">
+                <article class="plans-container--card">
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--title">Pago Anual</h3>
+                        <p class="plan-card--price"><span>$</span>99</p>
+                        <p class="plan-card--saving">*Ahorras $129 comparado al plan mensual.</p>
+                        <button class="plan-card--ca">Escoger este <span></span></button>
+                    </div>
+                </article>
+                <article class="plans-container--card">
+                    <p class="recommended">Recomendado</p>
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--title">Pago Anual</h3>
+                        <p class="plan-card--price"><span>$</span>99</p>
+                        <p class="plan-card--saving">*Ahorras $129 comparado al plan mensual.</p>
+                        <button class="plan-card--ca">Escoger este <span></span></button>
+                    </div>
+                </article>
+                <article class="plans-container--card">
+                    <div class="plan-info-container">
+                        <h3 class="plan-card--title">Pago Anual</h3>
+                        <p class="plan-card--price"><span>$</span>99</p>
+                        <p class="plan-card--saving">*Ahorras $129 comparado al plan mensual.</p>
+                        <button class="plan-card--ca">Escoger este <span></span></button>
+                    </div>
+                </article>
+            </section>
+        </section>
     </main>
     <footer></footer>
 </body>
